@@ -1,0 +1,16 @@
+---
+import { TAGS } from "./Projects.astro";
+
+const technologies = Object.values(TAGS);
+---
+
+<ul class="flex gap-2 flex-wrap">
+  {
+    technologies.map((technologie) => (
+      <li class={`py-1 px-2 rounded-md flex gap-1 items-center ${technologie.class}`}>
+        <technologie.icon class="size-5"/>
+        {technologie.name}
+      </li>
+    ))
+  }
+</ul>
