@@ -4,6 +4,7 @@ import Badge from "../components/Badge.astro"
 import LinkedInIcon from "../components/icons/LinkedIn.astro"
 import MailIcon from "../components/icons/Mail.astro"
 import SocialPill from "../components/SocialPill.astro"
+import LinkDownload from "./LinkDownload.astro"
 ---
 
 <div class="max-w-xl">
@@ -35,10 +36,10 @@ import SocialPill from "../components/SocialPill.astro"
     > de Colombia 🇨🇴. Especializado en el desarrollo de aplicaciones web con React JS.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill download="CV.pdf" href="/public/CV.pdf">
-      <MailIcon class="size-4" />
-      CV 
-    </SocialPill>
+      <LinkDownload>
+        <MailIcon class="size-4" />
+        CV 
+      </LinkDownload>
     <SocialPill href="https://linkedin.com/in/alvaro-pedrozo-b8600423b">
       <LinkedInIcon class="size-4" />
       LinkedIn
